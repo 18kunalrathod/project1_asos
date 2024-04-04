@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Futura PT", sans-serif;
+}
+
+.invert-to-white {
+  filter: invert(100%);
+}
+
+.top-bar-container,
+.search-bar-input,
+.nav-bar>.left-nav-bar>button {
+  display: none;
+}
+
+.hamburger-menu {
+  display: inline-block;
+}
+
+.india-flag img {
+  width: 15px;
+  height: 15px;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(45, 45, 45);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-bar-container>.nav-bar>.left-nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.nav-bar>.right-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  /* padding: 0px 15px; */
+}
+
+
+.icon-sizes {
+  width: 25px;
+  height: 25px;
+
+}
+
+.sale-banner {
+  width: 100%;
+  height: 40px;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgb(255, 56, 92);
+}
+
+.sale-banner>button {
+  display: none;
+  cursor: pointer;
+}
+
+/* hero-banner */
+
+.hero {
+  background-image: url("https://content.asos-media.com/-/media/homepages/unisex/generic-hp/13-march-2024/asos_march_generic-hp_mob.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+
+.hero-center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero-heading {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+
+.hero-heading>h1 {
+  font-size: 32px;
+  background-color: black;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 8px 12px;
+}
+
+
+
+.hero-heading>p {
+  background-color: black;
+  width: fit-content;
+  font-size: 16px;
+}
+
+
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+
+
+.hero-btn>button {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  width: 180px;
+  min-width: fit-content;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.hero-footer {
+  display: none;
+}
+
+.partners {
+  display: none;
+}
+
+.footer-links-container {
+  display: none;
+}
+
+.footer-links-section {
+  display: none;
+}
+
+.mobile-footer-links-section>.country-flags {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 12px;
+
+}
+
+
+.country-flags .country {
+  height: 18px;
+  gap: 10px;
+}
+
+
+.footer-widget-holder {
+  background-color: #ddd;
+}
+
+.footer-widget {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-widget>.site-footer{
+  font-size: 14px;
+}
+
+.footer-widget>.privacy {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+
+.footer-widget>.privacy>p:hover {
+  color: blue;
+}
+
+/* Media */
+
+@media only screen and (min-width: 768px) {
+  .top-bar-container {
+    width: 100%;
+    max-width: 1200px;
+    /* border: 1px solid red; */
+    display: block;
+    margin: auto;
+  }
+
+  .top-bar-container div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+
+
+    /* gap: 8px; */
+  }
+
+  .top-bar>a {
+    text-decoration: none;
+    color: #666;
+    padding: 0px 5px;
+    font-size: 13px;
+    border-right: 1px solid #ddd;
+
+  }
+
+  .top-bar>a:first-child {
+    border-left: 1px solid #ddd;
+  }
+
+
+
+
+  /* navigation-bar */
+
+
+  .navigation-bar-container {
+    width: auto;
+    height: auto;
+    background-color: rgb(45, 45, 45);
+  }
+
+  .nav-bar {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:60px ;
+
+  }
+
+  .nav-bar> .left-nav-bar > button{
+   width: 80px;
+   height: 50px;
+   background-color: rgb(45, 45, 45);
+  border: none;
+border-right: 1px solid #666;
+cursor: pointer;
+  }
+
+  .left-nav-bar > button > a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+  }
+
+  .navigation-bar-container>.nav-bar>.left-nav-bar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-bar>.right-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    /* padding: 0px 15px; */
+  }
+
+  .right-nav-bar>.search-bar {
+    background-color: white;
+    border-radius: 30px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin: auto;
+    height: 30px;
+  }
+
+   .search-bar-input::placeholder {
+    color: black;
+  }
+
+  .right-nav-bar>.search-bar>.search-bar-input {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+
+  .right-nav-bar>.search-bar>img {
+    filter: none;
+    
+  }
+
+
+
+  .hamburger-menu {
+    display: none;
+  }
+
+
+  /* navigation-bar */
+
+  /* sale-banner */
+
+  .sale-banner>button {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+  }
+
+  .btn-sale {
+    background-color: rgb(255, 56, 92);
+    font-family: "Futura PT", sans-serif;
+    border: 2px solid black;
+
+  }
+
+  /* Hero */
+
+  .hero {
+    background-image: url(/img/asos_march_generic-hp_desktop.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 650px;
+  }
+
+
+
+  .hero-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  .hero-btn {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .hero-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    background-color: rgb(45, 45, 45);
+    width: 100%;
+    margin: 0 auto;
+    padding: 4px 8px;
+  }
+
+  .hero-footer>p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600px;
+  }
+
+  .hero-footer>.text-left>span {
+    display: block;
+    font-size: 12px;
+    color: white;
+    margin-top: 2px;
+  }
+
+  /* sale-banner */
+
+  /* Partners */
+  .partners {
+    width: 1200px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 14px 0;
+  }
+
+  .partners img {
+    height: 26px;
+    object-fit: contain;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .social>a>img {
+    height: 42px;
+    border-radius: 50%;
+  }
+
+  .social>a>img:hover {
+    border: 1p solid lightblue;
+    transition: all 0.3s ease;
+  }
+
+  .payment-partners {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Partners */
+
+  /* footer */
+
+  .footer-links-container {
+    display: block;
+    width: 100%;
+    padding: 24px 12px;
+    background-color: #eee;
+  }
+
+  .footer-links {
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .footer-links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 25%;
+  }
+
+  .footer-links-section>a {
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    color: #666;
+  }
+
+  .footer-links-section>h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+  }
+
+  .footer-links-section>p {
+    font-size: 13px;
+
+    color: #666;
+  }
+
+  .footer-links-section > a:hover,
+  .footer-links-section > p:hover{
+    color: blue;
+  }
+
+
+  /* footer */
+
+  .mobile-footer-links-section {
+    display: none;
+  }
+
+  .footer-widget-holder {
+    padding: 8px 16px;
+  }
+
+}
+
+/* Media */
